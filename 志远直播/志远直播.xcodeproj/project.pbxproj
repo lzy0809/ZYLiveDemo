@@ -1,0 +1,767 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		885AD6741DAA287600222BBF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885AD6731DAA287600222BBF /* AppDelegate.swift */; };
+		885AD6791DAA287600222BBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 885AD6771DAA287600222BBF /* Main.storyboard */; };
+		885AD67B1DAA287600222BBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 885AD67A1DAA287600222BBF /* Assets.xcassets */; };
+		885AD6891DAA287600222BBF /* ____Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885AD6881DAA287600222BBF /* ____Tests.swift */; };
+		885AD6941DAA287600222BBF /* ____UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885AD6931DAA287600222BBF /* ____UITests.swift */; };
+		885AD6C51DAA2BF900222BBF /* ZYMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885AD6C41DAA2BF900222BBF /* ZYMainViewController.swift */; };
+		885AD6CC1DAA2F5400222BBF /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 885AD6CB1DAA2F5400222BBF /* Home.storyboard */; };
+		885AD6CF1DAA2F7300222BBF /* Live.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 885AD6CD1DAA2F7300222BBF /* Live.storyboard */; };
+		885AD6D11DAA2F8E00222BBF /* Follow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 885AD6D01DAA2F8E00222BBF /* Follow.storyboard */; };
+		885AD6D41DAA2F9F00222BBF /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 885AD6D21DAA2F9F00222BBF /* Profile.storyboard */; };
+		885AD6D61DAA31C300222BBF /* ZYHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885AD6D51DAA31C300222BBF /* ZYHomeViewController.swift */; };
+		885AD6D81DAA33A400222BBF /* UIBarButtonItem-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885AD6D71DAA33A400222BBF /* UIBarButtonItem-Extension.swift */; };
+		885AD6DA1DAA39CF00222BBF /* ZYPageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885AD6D91DAA39CF00222BBF /* ZYPageTitleView.swift */; };
+		885AD6DC1DAA3A8E00222BBF /* ZYCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885AD6DB1DAA3A8E00222BBF /* ZYCommon.swift */; };
+		885AD6E01DAA415600222BBF /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885AD6DF1DAA415600222BBF /* UIColor-Extension.swift */; };
+		885AD6E21DAA4C0600222BBF /* ZYPageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885AD6E11DAA4C0600222BBF /* ZYPageContentView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		885AD6851DAA287600222BBF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 885AD6681DAA287600222BBF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 885AD66F1DAA287600222BBF;
+			remoteInfo = "志远直播";
+		};
+		885AD6901DAA287600222BBF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 885AD6681DAA287600222BBF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 885AD66F1DAA287600222BBF;
+			remoteInfo = "志远直播";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		885AD6701DAA287600222BBF /* 志远直播.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "志远直播.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		885AD6731DAA287600222BBF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		885AD6781DAA287600222BBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		885AD67A1DAA287600222BBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		885AD67F1DAA287600222BBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		885AD6841DAA287600222BBF /* 志远直播Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "志远直播Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		885AD6881DAA287600222BBF /* ____Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "____Tests.swift"; sourceTree = "<group>"; };
+		885AD68A1DAA287600222BBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		885AD68F1DAA287600222BBF /* 志远直播UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "志远直播UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		885AD6931DAA287600222BBF /* ____UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "____UITests.swift"; sourceTree = "<group>"; };
+		885AD6951DAA287600222BBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		885AD6C41DAA2BF900222BBF /* ZYMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZYMainViewController.swift; sourceTree = "<group>"; };
+		885AD6CB1DAA2F5400222BBF /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Home.storyboard; path = ../../Main/Controller/Home.storyboard; sourceTree = "<group>"; };
+		885AD6CE1DAA2F7300222BBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "志远直播/Base.lproj/Live.storyboard"; sourceTree = SOURCE_ROOT; };
+		885AD6D01DAA2F8E00222BBF /* Follow.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Follow.storyboard; path = ../../Main/Controller/Follow.storyboard; sourceTree = "<group>"; };
+		885AD6D31DAA2F9F00222BBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "志远直播/Base.lproj/Profile.storyboard"; sourceTree = SOURCE_ROOT; };
+		885AD6D51DAA31C300222BBF /* ZYHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZYHomeViewController.swift; sourceTree = "<group>"; };
+		885AD6D71DAA33A400222BBF /* UIBarButtonItem-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem-Extension.swift"; sourceTree = "<group>"; };
+		885AD6D91DAA39CF00222BBF /* ZYPageTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZYPageTitleView.swift; sourceTree = "<group>"; };
+		885AD6DB1DAA3A8E00222BBF /* ZYCommon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZYCommon.swift; sourceTree = "<group>"; };
+		885AD6DF1DAA415600222BBF /* UIColor-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
+		885AD6E11DAA4C0600222BBF /* ZYPageContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZYPageContentView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		885AD66D1DAA287600222BBF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		885AD6811DAA287600222BBF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		885AD68C1DAA287600222BBF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		885AD6671DAA287600222BBF = {
+			isa = PBXGroup;
+			children = (
+				885AD6721DAA287600222BBF /* 志远直播 */,
+				885AD6871DAA287600222BBF /* 志远直播Tests */,
+				885AD6921DAA287600222BBF /* 志远直播UITests */,
+				885AD6711DAA287600222BBF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		885AD6711DAA287600222BBF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				885AD6701DAA287600222BBF /* 志远直播.app */,
+				885AD6841DAA287600222BBF /* 志远直播Tests.xctest */,
+				885AD68F1DAA287600222BBF /* 志远直播UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		885AD6721DAA287600222BBF /* 志远直播 */ = {
+			isa = PBXGroup;
+			children = (
+				885AD6731DAA287600222BBF /* AppDelegate.swift */,
+				885AD6A11DAA2A1700222BBF /* Classes */,
+				885AD67A1DAA287600222BBF /* Assets.xcassets */,
+				885AD67F1DAA287600222BBF /* Info.plist */,
+			);
+			path = "志远直播";
+			sourceTree = "<group>";
+		};
+		885AD6871DAA287600222BBF /* 志远直播Tests */ = {
+			isa = PBXGroup;
+			children = (
+				885AD6881DAA287600222BBF /* ____Tests.swift */,
+				885AD68A1DAA287600222BBF /* Info.plist */,
+			);
+			path = "志远直播Tests";
+			sourceTree = "<group>";
+		};
+		885AD6921DAA287600222BBF /* 志远直播UITests */ = {
+			isa = PBXGroup;
+			children = (
+				885AD6931DAA287600222BBF /* ____UITests.swift */,
+				885AD6951DAA287600222BBF /* Info.plist */,
+			);
+			path = "志远直播UITests";
+			sourceTree = "<group>";
+		};
+		885AD6A11DAA2A1700222BBF /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				885AD6AE1DAA2A1700222BBF /* Main */,
+				885AD6A61DAA2A1700222BBF /* Home */,
+				885AD6AA1DAA2A1700222BBF /* Live */,
+				885AD6A21DAA2A1700222BBF /* Follow */,
+				885AD6B21DAA2A1700222BBF /* Profile */,
+				885AD6B61DAA2A1700222BBF /* Tools */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		885AD6A21DAA2A1700222BBF /* Follow */ = {
+			isa = PBXGroup;
+			children = (
+				885AD6A31DAA2A1700222BBF /* Controller */,
+				885AD6A41DAA2A1700222BBF /* Model */,
+				885AD6A51DAA2A1700222BBF /* View */,
+			);
+			path = Follow;
+			sourceTree = "<group>";
+		};
+		885AD6A31DAA2A1700222BBF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				885AD6D01DAA2F8E00222BBF /* Follow.storyboard */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		885AD6A41DAA2A1700222BBF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		885AD6A51DAA2A1700222BBF /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		885AD6A61DAA2A1700222BBF /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				885AD6A71DAA2A1700222BBF /* Controller */,
+				885AD6A81DAA2A1700222BBF /* Model */,
+				885AD6A91DAA2A1700222BBF /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		885AD6A71DAA2A1700222BBF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				885AD6CB1DAA2F5400222BBF /* Home.storyboard */,
+				885AD6D51DAA31C300222BBF /* ZYHomeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		885AD6A81DAA2A1700222BBF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		885AD6A91DAA2A1700222BBF /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		885AD6AA1DAA2A1700222BBF /* Live */ = {
+			isa = PBXGroup;
+			children = (
+				885AD6AB1DAA2A1700222BBF /* Controller */,
+				885AD6AC1DAA2A1700222BBF /* Model */,
+				885AD6AD1DAA2A1700222BBF /* View */,
+			);
+			path = Live;
+			sourceTree = "<group>";
+		};
+		885AD6AB1DAA2A1700222BBF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				885AD6CD1DAA2F7300222BBF /* Live.storyboard */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		885AD6AC1DAA2A1700222BBF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		885AD6AD1DAA2A1700222BBF /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		885AD6AE1DAA2A1700222BBF /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				885AD6AF1DAA2A1700222BBF /* Controller */,
+				885AD6B01DAA2A1700222BBF /* Model */,
+				885AD6B11DAA2A1700222BBF /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		885AD6AF1DAA2A1700222BBF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				885AD6771DAA287600222BBF /* Main.storyboard */,
+				885AD6C41DAA2BF900222BBF /* ZYMainViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		885AD6B01DAA2A1700222BBF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		885AD6B11DAA2A1700222BBF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				885AD6D91DAA39CF00222BBF /* ZYPageTitleView.swift */,
+				885AD6E11DAA4C0600222BBF /* ZYPageContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		885AD6B21DAA2A1700222BBF /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				885AD6B31DAA2A1700222BBF /* Controller */,
+				885AD6B41DAA2A1700222BBF /* Model */,
+				885AD6B51DAA2A1700222BBF /* View */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		885AD6B31DAA2A1700222BBF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				885AD6D21DAA2F9F00222BBF /* Profile.storyboard */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		885AD6B41DAA2A1700222BBF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		885AD6B51DAA2A1700222BBF /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		885AD6B61DAA2A1700222BBF /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				885AD6B71DAA2A1700222BBF /* Extension */,
+				885AD6DB1DAA3A8E00222BBF /* ZYCommon.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		885AD6B71DAA2A1700222BBF /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				885AD6D71DAA33A400222BBF /* UIBarButtonItem-Extension.swift */,
+				885AD6DF1DAA415600222BBF /* UIColor-Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		885AD66F1DAA287600222BBF /* 志远直播 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 885AD6981DAA287600222BBF /* Build configuration list for PBXNativeTarget "志远直播" */;
+			buildPhases = (
+				885AD66C1DAA287600222BBF /* Sources */,
+				885AD66D1DAA287600222BBF /* Frameworks */,
+				885AD66E1DAA287600222BBF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "志远直播";
+			productName = "志远直播";
+			productReference = 885AD6701DAA287600222BBF /* 志远直播.app */;
+			productType = "com.apple.product-type.application";
+		};
+		885AD6831DAA287600222BBF /* 志远直播Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 885AD69B1DAA287600222BBF /* Build configuration list for PBXNativeTarget "志远直播Tests" */;
+			buildPhases = (
+				885AD6801DAA287600222BBF /* Sources */,
+				885AD6811DAA287600222BBF /* Frameworks */,
+				885AD6821DAA287600222BBF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				885AD6861DAA287600222BBF /* PBXTargetDependency */,
+			);
+			name = "志远直播Tests";
+			productName = "志远直播Tests";
+			productReference = 885AD6841DAA287600222BBF /* 志远直播Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		885AD68E1DAA287600222BBF /* 志远直播UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 885AD69E1DAA287600222BBF /* Build configuration list for PBXNativeTarget "志远直播UITests" */;
+			buildPhases = (
+				885AD68B1DAA287600222BBF /* Sources */,
+				885AD68C1DAA287600222BBF /* Frameworks */,
+				885AD68D1DAA287600222BBF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				885AD6911DAA287600222BBF /* PBXTargetDependency */,
+			);
+			name = "志远直播UITests";
+			productName = "志远直播UITests";
+			productReference = 885AD68F1DAA287600222BBF /* 志远直播UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		885AD6681DAA287600222BBF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = ZY;
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = soufunmedia;
+				TargetAttributes = {
+					885AD66F1DAA287600222BBF = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = UUHH4G6PDA;
+						ProvisioningStyle = Automatic;
+					};
+					885AD6831DAA287600222BBF = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 885AD66F1DAA287600222BBF;
+					};
+					885AD68E1DAA287600222BBF = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 885AD66F1DAA287600222BBF;
+					};
+				};
+			};
+			buildConfigurationList = 885AD66B1DAA287600222BBF /* Build configuration list for PBXProject "志远直播" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 885AD6671DAA287600222BBF;
+			productRefGroup = 885AD6711DAA287600222BBF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				885AD66F1DAA287600222BBF /* 志远直播 */,
+				885AD6831DAA287600222BBF /* 志远直播Tests */,
+				885AD68E1DAA287600222BBF /* 志远直播UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		885AD66E1DAA287600222BBF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				885AD6D41DAA2F9F00222BBF /* Profile.storyboard in Resources */,
+				885AD6D11DAA2F8E00222BBF /* Follow.storyboard in Resources */,
+				885AD6CC1DAA2F5400222BBF /* Home.storyboard in Resources */,
+				885AD67B1DAA287600222BBF /* Assets.xcassets in Resources */,
+				885AD6CF1DAA2F7300222BBF /* Live.storyboard in Resources */,
+				885AD6791DAA287600222BBF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		885AD6821DAA287600222BBF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		885AD68D1DAA287600222BBF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		885AD66C1DAA287600222BBF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				885AD6E21DAA4C0600222BBF /* ZYPageContentView.swift in Sources */,
+				885AD6DA1DAA39CF00222BBF /* ZYPageTitleView.swift in Sources */,
+				885AD6D61DAA31C300222BBF /* ZYHomeViewController.swift in Sources */,
+				885AD6C51DAA2BF900222BBF /* ZYMainViewController.swift in Sources */,
+				885AD6DC1DAA3A8E00222BBF /* ZYCommon.swift in Sources */,
+				885AD6D81DAA33A400222BBF /* UIBarButtonItem-Extension.swift in Sources */,
+				885AD6E01DAA415600222BBF /* UIColor-Extension.swift in Sources */,
+				885AD6741DAA287600222BBF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		885AD6801DAA287600222BBF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				885AD6891DAA287600222BBF /* ____Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		885AD68B1DAA287600222BBF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				885AD6941DAA287600222BBF /* ____UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		885AD6861DAA287600222BBF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 885AD66F1DAA287600222BBF /* 志远直播 */;
+			targetProxy = 885AD6851DAA287600222BBF /* PBXContainerItemProxy */;
+		};
+		885AD6911DAA287600222BBF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 885AD66F1DAA287600222BBF /* 志远直播 */;
+			targetProxy = 885AD6901DAA287600222BBF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		885AD6771DAA287600222BBF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				885AD6781DAA287600222BBF /* Base */,
+			);
+			name = Main.storyboard;
+			path = ../../..;
+			sourceTree = "<group>";
+		};
+		885AD6CD1DAA2F7300222BBF /* Live.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				885AD6CE1DAA2F7300222BBF /* Base */,
+			);
+			name = Live.storyboard;
+			path = ../../Main/Controller;
+			sourceTree = "<group>";
+		};
+		885AD6D21DAA2F9F00222BBF /* Profile.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				885AD6D31DAA2F9F00222BBF /* Base */,
+			);
+			name = Profile.storyboard;
+			path = ../../Main/Controller;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		885AD6961DAA287600222BBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		885AD6971DAA287600222BBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		885AD6991DAA287600222BBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = UUHH4G6PDA;
+				INFOPLIST_FILE = "志远直播/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.soufun.crm.----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		885AD69A1DAA287600222BBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = UUHH4G6PDA;
+				INFOPLIST_FILE = "志远直播/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.soufun.crm.----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		885AD69C1DAA287600222BBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "志远直播Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.soufun.crm.----Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/志远直播.app/志远直播";
+			};
+			name = Debug;
+		};
+		885AD69D1DAA287600222BBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "志远直播Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.soufun.crm.----Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/志远直播.app/志远直播";
+			};
+			name = Release;
+		};
+		885AD69F1DAA287600222BBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "志远直播UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.soufun.crm.----UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "志远直播";
+			};
+			name = Debug;
+		};
+		885AD6A01DAA287600222BBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "志远直播UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.soufun.crm.----UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "志远直播";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		885AD66B1DAA287600222BBF /* Build configuration list for PBXProject "志远直播" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				885AD6961DAA287600222BBF /* Debug */,
+				885AD6971DAA287600222BBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		885AD6981DAA287600222BBF /* Build configuration list for PBXNativeTarget "志远直播" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				885AD6991DAA287600222BBF /* Debug */,
+				885AD69A1DAA287600222BBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		885AD69B1DAA287600222BBF /* Build configuration list for PBXNativeTarget "志远直播Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				885AD69C1DAA287600222BBF /* Debug */,
+				885AD69D1DAA287600222BBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		885AD69E1DAA287600222BBF /* Build configuration list for PBXNativeTarget "志远直播UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				885AD69F1DAA287600222BBF /* Debug */,
+				885AD6A01DAA287600222BBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 885AD6681DAA287600222BBF /* Project object */;
+}
