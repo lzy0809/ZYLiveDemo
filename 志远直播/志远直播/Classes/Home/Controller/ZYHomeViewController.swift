@@ -13,21 +13,24 @@ fileprivate let kPageTitleViewH: CGFloat = 40
 class ZYHomeViewController: UIViewController {
     
     //MARK:- 懒加载
-    fileprivate lazy var pageTitleView: ZYPageTitleView = {
+    fileprivate lazy var pageTitleView: ZYPageTitleView = {[weak self] in
         let pageVcFrame = CGRect(x: 0, y: kStatusBarH + kNavigationBarH, width: kScreenW, height: kPageTitleViewH)
         let titles = ["推荐", "游戏", "娱乐", "趣玩"]
        let pageView = ZYPageTitleView(frame: pageVcFrame, titles: titles)
+        pageView.delegate = self
         return pageView
     }()
-    fileprivate lazy var pageContentView: ZYPageContentView = {
+    fileprivate lazy var pageContentView: ZYPageContentView = {[weak self] in
        let pageVcFrame = CGRect(x: 0, y: kStatusBarH + kNavigationBarH + kPageTitleViewH, width: kScreenW, height: kScreenH - kStatusBarH - kNavigationBarH - kPageTitleViewH - kTabBarH)
         var childVcs = [UIViewController]()
-        for _ in 0..<4 {
+        childVcs.append(ZYRecommendViewController())
+        for _ in 0..<3 {
             let vc = UIViewController()
             vc.view.backgroundColor = UIColor(r: CGFloat(arc4random_uniform(255)), g: CGFloat(arc4random_uniform(255)), b: CGFloat(arc4random_uniform(255)))
             childVcs.append(vc)
         }
         let contentView = ZYPageContentView(frame: pageVcFrame, childVcs: childVcs, parentVc: self)
+        contentView.delegate = self
         return contentView
     }()
     
@@ -67,9 +70,6 @@ extension ZYHomeViewController {
         navigationItem.rightBarButtonItems = [historyItem, scanItem, searchItem]
     }
     
-    
-    
-    
 }
 
 //MARK:- 导航栏按钮点击事件
@@ -87,3 +87,17 @@ extension ZYHomeViewController {
         print("点击了搜索按钮")
     }
 }
+
+//MARK:- 协议的代理方法
+extension ZYHomeViewController : ZYPageTitleDelegate, PageContentViewDelegate{
+    
+    ///ZYPageTitleDelegate代理方法
+    func pageTitleView(pageTitleView: ZYPageTitleView, didSelectedIndex index: Int) {
+        pageContentView.setCurrentIndex(index)
+    }
+    ///PageContentViewDelegate代理方法
+    func pageContentView(_ contentView: ZYPageContentView, progress: CGFloat, sourceIndex: Int, targetIndex: Int) {
+        pageTitleView.setTitleWithProgress(progress, sourceIndex: sourceIndex, targetIndex: targetIndex)
+    }
+}
+
