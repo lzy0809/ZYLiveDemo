@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -24,7 +23,8 @@
                     </imageView>
                     <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EBp-P0-aYo">
                         <constraints>
-                            <constraint firstAttribute="height" constant="20" id="NPa-pL-JMt"/>
+                            <constraint firstAttribute="width" constant="74" id="f5t-7m-9XU"/>
+                            <constraint firstAttribute="height" constant="20" id="km2-nT-DED"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
                         <state key="normal" title="66666在线" image="Image_online"/>
@@ -46,11 +46,10 @@
                 </subviews>
             </view>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="EBp-P0-aYo" secondAttribute="trailing" constant="5" id="0ht-6K-fCq"/>
                 <constraint firstAttribute="bottom" secondItem="azl-M0-XAE" secondAttribute="bottom" constant="30" id="5jE-IP-SfR"/>
+                <constraint firstItem="EBp-P0-aYo" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="5nS-CR-oMr"/>
                 <constraint firstItem="UVe-07-8qR" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="GmC-IF-OCd"/>
                 <constraint firstItem="azl-M0-XAE" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Hun-c3-eOL"/>
-                <constraint firstItem="bm1-Lr-yl9" firstAttribute="top" secondItem="EBp-P0-aYo" secondAttribute="bottom" constant="5" id="I7S-sM-6dR"/>
                 <constraint firstItem="bm1-Lr-yl9" firstAttribute="leading" secondItem="UVe-07-8qR" secondAttribute="trailing" constant="5" id="NeS-J6-b9j"/>
                 <constraint firstItem="bm1-Lr-yl9" firstAttribute="top" secondItem="azl-M0-XAE" secondAttribute="bottom" constant="5" id="VWw-bd-STT"/>
                 <constraint firstAttribute="trailing" secondItem="bm1-Lr-yl9" secondAttribute="trailing" constant="10" id="h6z-Iv-mhO"/>
@@ -60,13 +59,14 @@
                 <constraint firstItem="sDh-Tc-D29" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="rXK-qE-tGI"/>
                 <constraint firstAttribute="bottom" secondItem="bm1-Lr-yl9" secondAttribute="bottom" constant="5" id="sw1-RJ-96z"/>
                 <constraint firstItem="bm1-Lr-yl9" firstAttribute="centerY" secondItem="UVe-07-8qR" secondAttribute="centerY" id="tUs-iY-JFB"/>
+                <constraint firstAttribute="trailing" secondItem="EBp-P0-aYo" secondAttribute="trailing" constant="5" id="uu9-lr-ddw"/>
             </constraints>
             <size key="customSize" width="276" height="173"/>
             <connections>
                 <outlet property="iconImageView" destination="azl-M0-XAE" id="2n0-UL-siy"/>
-                <outlet property="nickNameLabel" destination="sDh-Tc-D29" id="Tuj-8u-qlP"/>
+                <outlet property="nickNameLabel" destination="bm1-Lr-yl9" id="3Z8-zt-TaJ"/>
                 <outlet property="onlineButton" destination="EBp-P0-aYo" id="VsO-xa-ts7"/>
-                <outlet property="roomNameLabel" destination="bm1-Lr-yl9" id="4s9-Ya-ipx"/>
+                <outlet property="roomNameLabel" destination="sDh-Tc-D29" id="1Ei-i0-O4Y"/>
             </connections>
             <point key="canvasLocation" x="-44" y="21.5"/>
         </collectionViewCell>

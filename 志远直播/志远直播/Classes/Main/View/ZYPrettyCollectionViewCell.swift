@@ -8,15 +8,14 @@
 
 import UIKit
 
-class ZYPrettyCollectionViewCell: UICollectionViewCell {
+class ZYPrettyCollectionViewCell: ZYCollectionBaseCell {
 
-    @IBOutlet weak var iconImageView: UIImageView!
-    @IBOutlet weak var nickNameLabel: UIButton!
     @IBOutlet weak var cityButton: UIButton!
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        
+    override var anchor: ZYAnchorModel? {
+        didSet{
+            super.anchor = anchor
+            cityButton.setTitle(anchor?.anchor_city, for: .normal)
+        }
     }
-
 }

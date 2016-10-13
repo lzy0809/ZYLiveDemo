@@ -24,6 +24,21 @@
 		885AD6DC1DAA3A8E00222BBF /* ZYCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885AD6DB1DAA3A8E00222BBF /* ZYCommon.swift */; };
 		885AD6E01DAA415600222BBF /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885AD6DF1DAA415600222BBF /* UIColor-Extension.swift */; };
 		885AD6E21DAA4C0600222BBF /* ZYPageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885AD6E11DAA4C0600222BBF /* ZYPageContentView.swift */; };
+		8861A7781DAF204700F030DB /* ZYRecommendGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8861A7771DAF204700F030DB /* ZYRecommendGameView.swift */; };
+		8861A77A1DAF205500F030DB /* ZYRecommendGameView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8861A7791DAF205500F030DB /* ZYRecommendGameView.xib */; };
+		8861A77D1DAF23AB00F030DB /* ZYCollectionGameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8861A77B1DAF23AB00F030DB /* ZYCollectionGameCell.swift */; };
+		8861A77E1DAF23AB00F030DB /* ZYCollectionGameCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8861A77C1DAF23AB00F030DB /* ZYCollectionGameCell.xib */; };
+		88CAB50E1DADCADD00217EF7 /* ZYRecommendViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CAB50D1DADCADD00217EF7 /* ZYRecommendViewModel.swift */; };
+		88CAB5101DADD42400217EF7 /* NSDate-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CAB50F1DADD42400217EF7 /* NSDate-Extension.swift */; };
+		88CAB5121DADD9AF00217EF7 /* ZYAnchorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CAB5111DADD9AF00217EF7 /* ZYAnchorModel.swift */; };
+		88CAB5141DADE47200217EF7 /* ZYAnchorGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CAB5131DADE47200217EF7 /* ZYAnchorGroup.swift */; };
+		88CAB5161DADF90600217EF7 /* ZYBaseGameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CAB5151DADF90600217EF7 /* ZYBaseGameModel.swift */; };
+		88CAB5181DADFE1C00217EF7 /* ZYCollectionBaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CAB5171DADFE1C00217EF7 /* ZYCollectionBaseCell.swift */; };
+		88CAB51A1DAE180800217EF7 /* ZYRecommendCycleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CAB5191DAE180800217EF7 /* ZYRecommendCycleView.swift */; };
+		88CAB51C1DAE181600217EF7 /* ZYRecommendCycleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88CAB51B1DAE181600217EF7 /* ZYRecommendCycleView.xib */; };
+		88CAB51F1DAE210D00217EF7 /* ZYRecommendCycleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CAB51D1DAE210D00217EF7 /* ZYRecommendCycleCell.swift */; };
+		88CAB5201DAE210D00217EF7 /* ZYRecommendCycleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88CAB51E1DAE210D00217EF7 /* ZYRecommendCycleCell.xib */; };
+		88CAB5231DAE271A00217EF7 /* ZYCycleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CAB5221DAE271A00217EF7 /* ZYCycleModel.swift */; };
 		88CE080E1DACD00200F31805 /* ZYRecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CE080D1DACD00200F31805 /* ZYRecommendViewController.swift */; };
 		88CE08111DACD82900F31805 /* ZYCollectionNormalViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CE080F1DACD82900F31805 /* ZYCollectionNormalViewCell.swift */; };
 		88CE08121DACD82900F31805 /* ZYCollectionNormalViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88CE08101DACD82900F31805 /* ZYCollectionNormalViewCell.xib */; };
@@ -77,6 +92,21 @@
 		885AD6DB1DAA3A8E00222BBF /* ZYCommon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZYCommon.swift; sourceTree = "<group>"; };
 		885AD6DF1DAA415600222BBF /* UIColor-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
 		885AD6E11DAA4C0600222BBF /* ZYPageContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZYPageContentView.swift; sourceTree = "<group>"; };
+		8861A7771DAF204700F030DB /* ZYRecommendGameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZYRecommendGameView.swift; sourceTree = "<group>"; };
+		8861A7791DAF205500F030DB /* ZYRecommendGameView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZYRecommendGameView.xib; sourceTree = "<group>"; };
+		8861A77B1DAF23AB00F030DB /* ZYCollectionGameCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZYCollectionGameCell.swift; sourceTree = "<group>"; };
+		8861A77C1DAF23AB00F030DB /* ZYCollectionGameCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZYCollectionGameCell.xib; sourceTree = "<group>"; };
+		88CAB50D1DADCADD00217EF7 /* ZYRecommendViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZYRecommendViewModel.swift; sourceTree = "<group>"; };
+		88CAB50F1DADD42400217EF7 /* NSDate-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate-Extension.swift"; sourceTree = "<group>"; };
+		88CAB5111DADD9AF00217EF7 /* ZYAnchorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZYAnchorModel.swift; sourceTree = "<group>"; };
+		88CAB5131DADE47200217EF7 /* ZYAnchorGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZYAnchorGroup.swift; sourceTree = "<group>"; };
+		88CAB5151DADF90600217EF7 /* ZYBaseGameModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZYBaseGameModel.swift; sourceTree = "<group>"; };
+		88CAB5171DADFE1C00217EF7 /* ZYCollectionBaseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZYCollectionBaseCell.swift; sourceTree = "<group>"; };
+		88CAB5191DAE180800217EF7 /* ZYRecommendCycleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZYRecommendCycleView.swift; sourceTree = "<group>"; };
+		88CAB51B1DAE181600217EF7 /* ZYRecommendCycleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZYRecommendCycleView.xib; sourceTree = "<group>"; };
+		88CAB51D1DAE210D00217EF7 /* ZYRecommendCycleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZYRecommendCycleCell.swift; sourceTree = "<group>"; };
+		88CAB51E1DAE210D00217EF7 /* ZYRecommendCycleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZYRecommendCycleCell.xib; sourceTree = "<group>"; };
+		88CAB5221DAE271A00217EF7 /* ZYCycleModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZYCycleModel.swift; sourceTree = "<group>"; };
 		88CE080D1DACD00200F31805 /* ZYRecommendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZYRecommendViewController.swift; sourceTree = "<group>"; };
 		88CE080F1DACD82900F31805 /* ZYCollectionNormalViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZYCollectionNormalViewCell.swift; sourceTree = "<group>"; };
 		88CE08101DACD82900F31805 /* ZYCollectionNormalViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZYCollectionNormalViewCell.xib; sourceTree = "<group>"; };
@@ -229,9 +259,10 @@
 		885AD6A61DAA2A1700222BBF /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				88CAB50C1DADCAA900217EF7 /* ViewModel */,
 				885AD6A71DAA2A1700222BBF /* Controller */,
-				885AD6A81DAA2A1700222BBF /* Model */,
 				885AD6A91DAA2A1700222BBF /* View */,
+				88CAB5211DAE26F800217EF7 /* Model */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -246,18 +277,19 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		885AD6A81DAA2A1700222BBF /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		885AD6A91DAA2A1700222BBF /* View */ = {
 			isa = PBXGroup;
 			children = (
 				88CE08131DACDED100F31805 /* ZYCollectionHeaderView.swift */,
 				88CE08141DACDED100F31805 /* ZYCollectionHeaderView.xib */,
+				88CAB5191DAE180800217EF7 /* ZYRecommendCycleView.swift */,
+				88CAB51B1DAE181600217EF7 /* ZYRecommendCycleView.xib */,
+				88CAB51D1DAE210D00217EF7 /* ZYRecommendCycleCell.swift */,
+				88CAB51E1DAE210D00217EF7 /* ZYRecommendCycleCell.xib */,
+				8861A7771DAF204700F030DB /* ZYRecommendGameView.swift */,
+				8861A7791DAF205500F030DB /* ZYRecommendGameView.xib */,
+				8861A77B1DAF23AB00F030DB /* ZYCollectionGameCell.swift */,
+				8861A77C1DAF23AB00F030DB /* ZYCollectionGameCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -316,6 +348,9 @@
 		885AD6B01DAA2A1700222BBF /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				88CAB5111DADD9AF00217EF7 /* ZYAnchorModel.swift */,
+				88CAB5131DADE47200217EF7 /* ZYAnchorGroup.swift */,
+				88CAB5151DADF90600217EF7 /* ZYBaseGameModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -329,6 +364,7 @@
 				88CE08101DACD82900F31805 /* ZYCollectionNormalViewCell.xib */,
 				88CE08171DACE3AB00F31805 /* ZYPrettyCollectionViewCell.swift */,
 				88CE08181DACE3AB00F31805 /* ZYPrettyCollectionViewCell.xib */,
+				88CAB5171DADFE1C00217EF7 /* ZYCollectionBaseCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -380,8 +416,25 @@
 			children = (
 				885AD6D71DAA33A400222BBF /* UIBarButtonItem-Extension.swift */,
 				885AD6DF1DAA415600222BBF /* UIColor-Extension.swift */,
+				88CAB50F1DADD42400217EF7 /* NSDate-Extension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		88CAB50C1DADCAA900217EF7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				88CAB50D1DADCADD00217EF7 /* ZYRecommendViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		88CAB5211DAE26F800217EF7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				88CAB5221DAE271A00217EF7 /* ZYCycleModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -497,14 +550,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				88CE081A1DACE3AB00F31805 /* ZYPrettyCollectionViewCell.xib in Resources */,
+				88CAB51C1DAE181600217EF7 /* ZYRecommendCycleView.xib in Resources */,
 				885AD6D41DAA2F9F00222BBF /* Profile.storyboard in Resources */,
 				885AD6D11DAA2F8E00222BBF /* Follow.storyboard in Resources */,
 				885AD6CC1DAA2F5400222BBF /* Home.storyboard in Resources */,
 				88CE08121DACD82900F31805 /* ZYCollectionNormalViewCell.xib in Resources */,
+				8861A77A1DAF205500F030DB /* ZYRecommendGameView.xib in Resources */,
 				885AD67B1DAA287600222BBF /* Assets.xcassets in Resources */,
+				8861A77E1DAF23AB00F030DB /* ZYCollectionGameCell.xib in Resources */,
 				885AD6CF1DAA2F7300222BBF /* Live.storyboard in Resources */,
 				88CE08161DACDED100F31805 /* ZYCollectionHeaderView.xib in Resources */,
 				885AD6791DAA287600222BBF /* Main.storyboard in Resources */,
+				88CAB5201DAE210D00217EF7 /* ZYRecommendCycleCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -579,15 +636,26 @@
 			files = (
 				88CE08151DACDED100F31805 /* ZYCollectionHeaderView.swift in Sources */,
 				88CE081C1DACF80400F31805 /* ZYNetworkTools.swift in Sources */,
+				88CAB51F1DAE210D00217EF7 /* ZYRecommendCycleCell.swift in Sources */,
 				885AD6E21DAA4C0600222BBF /* ZYPageContentView.swift in Sources */,
+				88CAB5141DADE47200217EF7 /* ZYAnchorGroup.swift in Sources */,
 				885AD6DA1DAA39CF00222BBF /* ZYPageTitleView.swift in Sources */,
 				885AD6D61DAA31C300222BBF /* ZYHomeViewController.swift in Sources */,
 				88CE080E1DACD00200F31805 /* ZYRecommendViewController.swift in Sources */,
+				88CAB5161DADF90600217EF7 /* ZYBaseGameModel.swift in Sources */,
+				8861A7781DAF204700F030DB /* ZYRecommendGameView.swift in Sources */,
+				88CAB50E1DADCADD00217EF7 /* ZYRecommendViewModel.swift in Sources */,
 				88CE08111DACD82900F31805 /* ZYCollectionNormalViewCell.swift in Sources */,
+				88CAB5231DAE271A00217EF7 /* ZYCycleModel.swift in Sources */,
 				88CE08191DACE3AB00F31805 /* ZYPrettyCollectionViewCell.swift in Sources */,
+				8861A77D1DAF23AB00F030DB /* ZYCollectionGameCell.swift in Sources */,
 				885AD6C51DAA2BF900222BBF /* ZYMainViewController.swift in Sources */,
+				88CAB5101DADD42400217EF7 /* NSDate-Extension.swift in Sources */,
 				885AD6DC1DAA3A8E00222BBF /* ZYCommon.swift in Sources */,
 				885AD6D81DAA33A400222BBF /* UIBarButtonItem-Extension.swift in Sources */,
+				88CAB5181DADFE1C00217EF7 /* ZYCollectionBaseCell.swift in Sources */,
+				88CAB5121DADD9AF00217EF7 /* ZYAnchorModel.swift in Sources */,
+				88CAB51A1DAE180800217EF7 /* ZYRecommendCycleView.swift in Sources */,
 				885AD6E01DAA415600222BBF /* UIColor-Extension.swift in Sources */,
 				885AD6741DAA287600222BBF /* AppDelegate.swift in Sources */,
 			);

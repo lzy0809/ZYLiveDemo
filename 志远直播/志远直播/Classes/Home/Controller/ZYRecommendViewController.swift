@@ -27,8 +27,9 @@ private let kHeaderViewID = "kHeaderViewID"
 
 class ZYRecommendViewController: UIViewController {
     
-    
     //MARK:- 懒加载控件
+    fileprivate lazy var recommendVM : ZYRecommendViewModel = ZYRecommendViewModel()
+    
     fileprivate lazy var collectionView: UICollectionView = {[unowned self] in
         let layout = UICollectionViewFlowLayout()
         layout.itemSize = CGSize(width: kItemW, height: kNormalItemH)
@@ -42,32 +43,32 @@ class ZYRecommendViewController: UIViewController {
         collectionView.dataSource = self
         collectionView.delegate = self
         collectionView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
+        collectionView.contentInset = UIEdgeInsets(top: kCycleViewH + kGameViewH, left: 0, bottom: 0, right: 0)
         collectionView.register(UINib(nibName: "ZYCollectionNormalViewCell", bundle: nil), forCellWithReuseIdentifier: kNormalCellID)
         collectionView.register(UINib(nibName: "ZYPrettyCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: kPrettyCellID)
         collectionView.register(UINib(nibName: "ZYCollectionHeaderView", bundle: nil), forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: kHeaderViewID)
         return collectionView
         }()
-
+    
+    fileprivate lazy var cycleView: ZYRecommendCycleView = {
+       let cycleView = ZYRecommendCycleView.recomendCycleView()
+        cycleView.frame = CGRect(x: 0, y: -(kCycleViewH + kGameViewH), width: kScreenW, height: kCycleViewH)
+        return cycleView
+    }()
+    
+    fileprivate lazy var gameView: ZYRecommendGameView = {
+       let gameView = ZYRecommendGameView.recommendGameView()
+        gameView.frame = CGRect(x: 0, y: -kGameViewH, width: kScreenW, height: kGameViewH)
+        return gameView
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
        //设置UI布局
         setupUI()
-        
-        //测试 网络
-        let urlStr = "https://httpbin.org/get"
-        let param = ["name": "lzy",
-                     "age": "18",
-                     "sex": "男",
-                     "messagename": "sunfun"]
-        ZYNetworkTools.GET_Request(urlStr, params: param, returnDataType: .JSON, success: { (responObj) in
-            print("返回结果是:\(responObj)")
-            }) { (errorObj) in
-                print(errorObj)
-        }
-        
+        //发送网络请求
+        sendRequest()
     }
-
 }
 
 //MARK:- 设计UI布局
@@ -75,6 +76,38 @@ extension ZYRecommendViewController {
     
     fileprivate func setupUI(){
         view.addSubview(collectionView)
+        //添加轮播的view
+        collectionView.addSubview(cycleView)
+        //添加游戏view
+        collectionView.addSubview(gameView)
+    }
+}
+
+//MARK:- 发送网络请求
+extension ZYRecommendViewController {
+    //发送网络请求
+    fileprivate func sendRequest(){
+        //请求首页推荐、美颜、游戏数据的网络请求
+        recommendVM.requestRecommendData {
+            //刷新界面
+            self.collectionView.reloadData()
+            
+            var gameGroups = self.recommendVM.anchorGroups
+            
+            gameGroups.removeFirst()
+            gameGroups.removeFirst()
+            
+            let moreGroup = ZYAnchorGroup()
+            moreGroup.tag_name = "更多"
+            gameGroups.append(moreGroup)
+            
+            self.gameView.gameGroups = gameGroups
+        }
+        
+        //发送轮播图的网络请求
+        recommendVM.requestCycleData { 
+            self.cycleView.cycleGroups = self.recommendVM.cycleGroups
+        }
     }
 }
 
@@ -82,25 +115,35 @@ extension ZYRecommendViewController: UICollectionViewDataSource, UICollectionVie
     
     //UICollectionViewDataSource
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 8
+        return recommendVM.anchorGroups.count
     }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 4
+        let group = recommendVM.anchorGroups[section]
+        return group.anchors.count
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        let group = recommendVM.anchorGroups[indexPath.section]
+        let anchor = group.anchors[indexPath.item]
+        
+        var cell : ZYCollectionBaseCell!
+        
         if indexPath.section == 1 {//美颜
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kPrettyCellID, for: indexPath)
-            return cell
+            cell = collectionView.dequeueReusableCell(withReuseIdentifier: kPrettyCellID, for: indexPath) as! ZYPrettyCollectionViewCell
         }
         else {
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kNormalCellID, for: indexPath)
-            return cell
+            cell = collectionView.dequeueReusableCell(withReuseIdentifier: kNormalCellID, for: indexPath) as! ZYCollectionNormalViewCell
         }
+        cell.anchor = anchor
         
+        return cell
     }
     //分组的header或者footer
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-        let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionElementKindSectionHeader, withReuseIdentifier: kHeaderViewID, for: indexPath)
+        let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionElementKindSectionHeader, withReuseIdentifier: kHeaderViewID, for: indexPath) as! ZYCollectionHeaderView
+        
+        headerView.headerGroup = recommendVM.anchorGroups[indexPath.section]
+        
         return headerView
     }
     

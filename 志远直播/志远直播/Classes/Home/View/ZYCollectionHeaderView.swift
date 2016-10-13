@@ -10,10 +10,23 @@ import UIKit
 
 class ZYCollectionHeaderView: UICollectionReusableView {
 
+    @IBOutlet weak var iconImageView: UIImageView!
     @IBOutlet weak var headerNameLabel: UILabel!
+    
         override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+    }
+    
+    //MARK:- 定义数据模型
+    var headerGroup: ZYAnchorGroup? {
+        didSet{
+            guard let headerGroup = headerGroup else {
+                return
+            }
+            headerNameLabel.text = headerGroup.tag_name
+            iconImageView.image = UIImage(named: headerGroup.icon_name ?? "home_header_normal")
+        }
     }
     
     //MARK:- 点击"更多"按钮

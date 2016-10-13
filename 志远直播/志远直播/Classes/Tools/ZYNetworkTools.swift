@@ -17,65 +17,69 @@ enum returnDataType {
 }
 
 class ZYNetworkTools{
-
     
     
     /// 发送POST请求
-    class func POST_Request(_ urlString : String, params : [String : String], returnDataType: returnDataType, success : @escaping (_ responseObject : Any)->(), failture : @escaping (_ error : NSError)->()) {
+    class func POST_Request(_ urlString : String, params : [String : String], returnDataType: returnDataType, finishedCallback : @escaping (_ responseObject : Any)->()) {
         let messagename = params["messagename"] ?? "无名氏"
         switch returnDataType {
         case .JSON:
             Alamofire.request(urlString, method: .post, parameters: params, encoding: URLEncoding.default).responseJSON { (response) in
-                print("网络请求\(messagename)的接口是：\(response.request!)")
-                switch response.result{
-                case .success(let data):
-                    success(data)
-                case .failure(let encodingError):
-                    failture(encodingError as NSError)
-                    
+                //打印接口地址
+                print("接口\(messagename)地址：\(response.request!)")
+                //获取结果
+                guard let result = response.result.value else {
+                    print("接口\(messagename)失败原因:\(response.result.error)")
+                    return
                 }
+                // 将结果回调出去
+                finishedCallback(result)
             }
         default:
             Alamofire.request(urlString, method: .post, parameters: params, encoding: URLEncoding.default).responseData(completionHandler: { (responseXML) in
-                print("网络请求\(messagename)的接口是：\(responseXML.request!)")
-                switch responseXML.result{
-                case .success( _):
-                    success(responseXML.data)
-                case .failure(let encodingError):
-                    failture(encodingError as NSError)
-                    
+                //打印接口地址
+                print("接口\(messagename)地址：\(responseXML.request!)")
+                //获取结果
+                guard let resultXML = responseXML.result.value else {
+                    print("接口\(messagename)失败原因:\(responseXML.result.error)")
+                    return
                 }
+                // 将结果回调出去
+                finishedCallback(resultXML)
             })
         }
     }
     
     /// 发送GET请求
-    class func GET_Request(_ urlString : String, params : [String : String], returnDataType: returnDataType, success : @escaping (_ responseObject : Any)->(), failture : @escaping (_ error : NSError)->()) {
+    class func GET_Request(_ urlString : String, params : [String : String], returnDataType: returnDataType, finishedCallback : @escaping (_ responseObject : Any)->()) {
         let messagename = params["messagename"] ?? "无名氏"
         switch returnDataType {
         case .JSON:
             Alamofire.request(urlString, method: .get, parameters: params, encoding: URLEncoding.default).responseJSON { (response) in
-                print("网络请求\(messagename)的接口是：\(response.request!)")
-                switch response.result{
-                case .success(let data):
-                    success(data)
-                case .failure(let encodingError):
-                    failture(encodingError as NSError)
-                    
+                //打印接口地址
+                print("接口\(messagename)地址：\(response.request!)")
+                //获取结果
+                guard let result = response.result.value else {
+                    print("接口\(messagename)失败原因:\(response.result.error)")
+                    return
                 }
+                // 将结果回调出去
+                finishedCallback(result)
             }
         default:
             Alamofire.request(urlString, method: .get, parameters: params, encoding: URLEncoding.default).responseData(completionHandler: { (responseXML) in
-                print("网络请求\(messagename)的接口是：\(responseXML.request!)")
-                switch responseXML.result{
-                case .success( _):
-                    success(responseXML.data)
-                case .failure(let encodingError):
-                    failture(encodingError as NSError)
-                    
+                //打印接口地址
+                print("接口\(messagename)地址：\(responseXML.request!)")
+                //获取结果
+                guard let resultXML = responseXML.result.value else {
+                    print("接口\(messagename)失败原因:\(responseXML.result.error)")
+                    return
                 }
+                // 将结果回调出去
+                finishedCallback(resultXML)
             })
         }
         
     }
+
 }
