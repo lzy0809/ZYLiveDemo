@@ -8,18 +8,18 @@
 
 import UIKit
 
-class ZYCollectionNormalViewCell: UICollectionViewCell {
+class ZYCollectionNormalViewCell: ZYCollectionBaseCell {
 
-    @IBOutlet weak var iconImageView: UIImageView!
-    @IBOutlet weak var roomNameLabel: UILabel!
-    @IBOutlet weak var onlineButton: UIButton!
-    @IBOutlet weak var nickNameLabel: UILabel!
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        //设置圆角
-        iconImageView.layer.masksToBounds = true
-        iconImageView.layer.cornerRadius = 5
+    @IBOutlet weak var roomNameLabel: UILabel!
+    
+    override var anchor: ZYAnchorModel? {
+        didSet{
+            super.anchor = anchor
+            roomNameLabel.text = anchor?.room_name
+        }
     }
+    
+    
 
 }

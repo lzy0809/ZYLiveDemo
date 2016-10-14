@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ZYCollectionGameCell" customModule="志远直播" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="80" height="90"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="80" height="90"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jsJ-e3-TIM"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="一熊联盟" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L1U-Q6-axI">
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="L1U-Q6-axI" secondAttribute="bottom" constant="5" id="1ek-Cm-9rZ"/>
+                <constraint firstItem="L1U-Q6-axI" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="5xn-oA-ZgN"/>
+                <constraint firstAttribute="trailing" secondItem="L1U-Q6-axI" secondAttribute="trailing" id="8eH-Mm-MYM"/>
+                <constraint firstItem="L1U-Q6-axI" firstAttribute="top" secondItem="jsJ-e3-TIM" secondAttribute="bottom" constant="5" id="B1X-ke-af7"/>
+                <constraint firstAttribute="trailing" secondItem="jsJ-e3-TIM" secondAttribute="trailing" constant="10" id="Ojp-xa-mew"/>
+                <constraint firstItem="jsJ-e3-TIM" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="ezY-5Z-H0B"/>
+                <constraint firstAttribute="bottom" secondItem="jsJ-e3-TIM" secondAttribute="bottom" constant="25" id="hIm-LY-myd"/>
+                <constraint firstItem="jsJ-e3-TIM" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="xLH-UR-CGz"/>
+            </constraints>
+            <size key="customSize" width="276" height="193"/>
+            <connections>
+                <outlet property="iconImageView" destination="jsJ-e3-TIM" id="or7-q1-dIX"/>
+                <outlet property="nameLabel" destination="L1U-Q6-axI" id="N5H-cr-jSs"/>
+            </connections>
+            <point key="canvasLocation" x="-34" y="50"/>
+        </collectionViewCell>
+    </objects>
+</document>
