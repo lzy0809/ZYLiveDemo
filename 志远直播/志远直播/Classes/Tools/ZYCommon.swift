@@ -20,9 +20,17 @@ let kTabBarH: CGFloat = 44
 let kHomeHotRootUrl = "http://capi.douyucdn.cn/api/v1/getbigDataRoom"
 ///首页美颜
 let kHomePrettyRootUrl = "http://capi.douyucdn.cn/api/v1/getVerticalRoom"
-/// 首页游戏
+/// 首页热门（推荐里面的游戏）
 let kHomePlayGamesRootUrl = "http://capi.douyucdn.cn/api/v1/getHotCate"
 /// 首页轮播
 let kHomeCycleRootUrl = "http://www.douyutv.com/api/v1/slide/6"
+/// 首页游戏
+let kGameMenuRootUrl = "http://capi.douyucdn.cn/api/homeCate/getHotRoom"
+/// 首页娱乐
+let kAmuseRootUrl = "http://capi.douyucdn.cn/api/v1/getHotRoom/2"
+/// 首页趣玩
+let kFunnyRootUrl = "http://capi.douyucdn.cn/api/homeCate/getHotRoom"
+
+
 
 

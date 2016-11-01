@@ -9,11 +9,9 @@
 import UIKit
 import SVProgressHUD
 
-class ZYRecommendViewModel{
+class ZYRecommendViewModel : ZYBaseViewModel{
 
     //MARK:- 懒加载属性
-    /// 最终的数据组
-    var anchorGroups: [ZYAnchorGroup] = [ZYAnchorGroup]()
     /// 推荐数据:(头一个:最热)
     fileprivate var hotDataGroup : ZYAnchorGroup = ZYAnchorGroup()
     /// 美颜数据
@@ -82,18 +80,7 @@ extension ZYRecommendViewModel {
                               "time": Date.getCurrentTime(),
                               "messagename": "playGameRecommend"]
         disGroup.enter()
-        ZYNetworkTools.GET_Request(kHomePlayGamesRootUrl, params: playGameParams, returnDataType: .JSON) { (result) in
-            // 将result转成字典类型
-            guard let resultDict = result as? [String : NSObject] else { return }
-            
-            // 根据data该key,获取数组
-            guard let dataArray = resultDict["data"] as? [[String : NSObject]] else { return }
-            
-            // 遍历数组,获取字典,并且将字典转成模型对象
-            for dict in dataArray {
-                let group = ZYAnchorGroup(dict: dict)
-                self.anchorGroups.append(group)
-            }
+        loadAnchorData(isGroupData: true, URLString: kHomePlayGamesRootUrl, parameters: playGameParams) { 
             disGroup.leave()
         }
         

@@ -12,6 +12,7 @@ class ZYCollectionHeaderView: UICollectionReusableView {
 
     @IBOutlet weak var iconImageView: UIImageView!
     @IBOutlet weak var headerNameLabel: UILabel!
+    @IBOutlet weak var moreButton: UIButton!
     
         override func awakeFromNib() {
         super.awakeFromNib()
@@ -32,5 +33,12 @@ class ZYCollectionHeaderView: UICollectionReusableView {
     //MARK:- 点击"更多"按钮
     @IBAction func moreButtonClick(_ sender: AnyObject) {
         print("点击了'更多'按钮")
+    }
+}
+
+extension ZYCollectionHeaderView {
+    class func collectionHeaderView() -> ZYCollectionHeaderView {
+        
+        return Bundle.main.loadNibNamed("ZYCollectionHeaderView", owner: nil, options: nil)?.first as! ZYCollectionHeaderView
     }
 }

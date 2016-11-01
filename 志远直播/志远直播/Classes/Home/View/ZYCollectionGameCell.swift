@@ -16,7 +16,7 @@ class ZYCollectionGameCell: UICollectionViewCell {
     
     
     //MARK:- 定义属性
-    var gameGroup: ZYAnchorGroup? {
+    var gameGroup: ZYBaseGameModel? {
         didSet{
             nameLabel.text = gameGroup?.tag_name
             iconImageView.kf.setImage(with: URL(string: gameGroup?.icon_url ?? ""), placeholder: UIImage(named: "home_more_btn"))
@@ -28,7 +28,7 @@ class ZYCollectionGameCell: UICollectionViewCell {
         super.awakeFromNib()
 //        // 设置圆角
         iconImageView.layer.masksToBounds = true
-        iconImageView.layer.cornerRadius = 30
+        iconImageView.layer.cornerRadius = 25
         
     }
 

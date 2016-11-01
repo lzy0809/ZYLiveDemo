@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -27,10 +27,10 @@
                 <constraint firstItem="L1U-Q6-axI" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="5xn-oA-ZgN"/>
                 <constraint firstAttribute="trailing" secondItem="L1U-Q6-axI" secondAttribute="trailing" id="8eH-Mm-MYM"/>
                 <constraint firstItem="L1U-Q6-axI" firstAttribute="top" secondItem="jsJ-e3-TIM" secondAttribute="bottom" constant="5" id="B1X-ke-af7"/>
-                <constraint firstAttribute="trailing" secondItem="jsJ-e3-TIM" secondAttribute="trailing" constant="10" id="Ojp-xa-mew"/>
-                <constraint firstItem="jsJ-e3-TIM" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="ezY-5Z-H0B"/>
-                <constraint firstAttribute="bottom" secondItem="jsJ-e3-TIM" secondAttribute="bottom" constant="25" id="hIm-LY-myd"/>
-                <constraint firstItem="jsJ-e3-TIM" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="xLH-UR-CGz"/>
+                <constraint firstAttribute="trailing" secondItem="jsJ-e3-TIM" secondAttribute="trailing" constant="15" id="Ojp-xa-mew"/>
+                <constraint firstItem="jsJ-e3-TIM" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="ezY-5Z-H0B"/>
+                <constraint firstAttribute="bottom" secondItem="jsJ-e3-TIM" secondAttribute="bottom" constant="30" id="hIm-LY-myd"/>
+                <constraint firstItem="jsJ-e3-TIM" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="15" id="xLH-UR-CGz"/>
             </constraints>
             <size key="customSize" width="276" height="193"/>
             <connections>

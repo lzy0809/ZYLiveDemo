@@ -20,8 +20,8 @@ class ZYNetworkTools{
     
     
     /// 发送POST请求
-    class func POST_Request(_ urlString : String, params : [String : String], returnDataType: returnDataType, finishedCallback : @escaping (_ responseObject : Any)->()) {
-        let messagename = params["messagename"] ?? "无名氏"
+    class func POST_Request(_ urlString : String, params : [String : String]? = nil, returnDataType: returnDataType, finishedCallback : @escaping (_ responseObject : Any)->()) {
+        let messagename = params?["messagename"] ?? "无名氏"
         switch returnDataType {
         case .JSON:
             Alamofire.request(urlString, method: .post, parameters: params, encoding: URLEncoding.default).responseJSON { (response) in
@@ -51,8 +51,8 @@ class ZYNetworkTools{
     }
     
     /// 发送GET请求
-    class func GET_Request(_ urlString : String, params : [String : String], returnDataType: returnDataType, finishedCallback : @escaping (_ responseObject : Any)->()) {
-        let messagename = params["messagename"] ?? "无名氏"
+    class func GET_Request(_ urlString : String, params : [String : String]? = nil, returnDataType: returnDataType, finishedCallback : @escaping (_ responseObject : Any)->()) {
+        let messagename = params?["messagename"] ?? "无名氏"
         switch returnDataType {
         case .JSON:
             Alamofire.request(urlString, method: .get, parameters: params, encoding: URLEncoding.default).responseJSON { (response) in

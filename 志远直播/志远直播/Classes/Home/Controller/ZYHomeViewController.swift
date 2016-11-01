@@ -24,11 +24,9 @@ class ZYHomeViewController: UIViewController {
        let pageVcFrame = CGRect(x: 0, y: kStatusBarH + kNavigationBarH + kPageTitleViewH, width: kScreenW, height: kScreenH - kStatusBarH - kNavigationBarH - kPageTitleViewH - kTabBarH)
         var childVcs = [UIViewController]()
         childVcs.append(ZYRecommendViewController())
-        for _ in 0..<3 {
-            let vc = UIViewController()
-            vc.view.backgroundColor = UIColor(r: CGFloat(arc4random_uniform(255)), g: CGFloat(arc4random_uniform(255)), b: CGFloat(arc4random_uniform(255)))
-            childVcs.append(vc)
-        }
+        childVcs.append(ZYGameViewController())
+        childVcs.append(ZYAmuseViewController())
+        childVcs.append(ZYFunnyViewController())
         let contentView = ZYPageContentView(frame: pageVcFrame, childVcs: childVcs, parentVc: self)
         contentView.delegate = self
         return contentView

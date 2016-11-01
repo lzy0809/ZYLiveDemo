@@ -16,7 +16,7 @@ class ZYRecommendGameView: UIView {
     @IBOutlet weak var collectionView: UICollectionView!
     
     //MARK:- 定义属性
-    var gameGroups: [ZYAnchorGroup]? {
+    var gameGroups: [ZYBaseGameModel]? {
         didSet{
             collectionView.reloadData()
         }
