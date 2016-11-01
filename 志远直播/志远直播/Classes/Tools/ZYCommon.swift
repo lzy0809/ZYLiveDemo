@@ -8,7 +8,7 @@
 
 import UIKit
 
-//尺寸
+//MARK:- 各种尺寸
 let kScreenW: CGFloat = UIScreen.main.bounds.width
 let kScreenH: CGFloat = UIScreen.main.bounds.height
 let kNavigationBarH: CGFloat = 44
@@ -32,5 +32,15 @@ let kAmuseRootUrl = "http://capi.douyucdn.cn/api/v1/getHotRoom/2"
 let kFunnyRootUrl = "http://capi.douyucdn.cn/api/homeCate/getHotRoom"
 
 
+
+//MARK:- 自定义打印
+func ZYLogin<T>(message:T,
+              file:String = #file,
+              method:String = #function,
+              line:Int = #line){
+    #if DEBUG
+        print("\((file as NSString).lastPathComponent)[\(line)],\(method):\(message)")
+    #endif
+}
 
 
