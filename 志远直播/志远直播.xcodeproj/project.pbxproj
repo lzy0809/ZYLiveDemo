@@ -64,6 +64,7 @@
 		88CE08191DACE3AB00F31805 /* ZYPrettyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CE08171DACE3AB00F31805 /* ZYPrettyCollectionViewCell.swift */; };
 		88CE081A1DACE3AB00F31805 /* ZYPrettyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88CE08181DACE3AB00F31805 /* ZYPrettyCollectionViewCell.xib */; };
 		88CE081C1DACF80400F31805 /* ZYNetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CE081B1DACF80400F31805 /* ZYNetworkTools.swift */; };
+		88E276A61DC9B9D900DD38C7 /* UIImage-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E276A51DC9B9D900DD38C7 /* UIImage-Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -149,6 +150,7 @@
 		88CE08171DACE3AB00F31805 /* ZYPrettyCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZYPrettyCollectionViewCell.swift; sourceTree = "<group>"; };
 		88CE08181DACE3AB00F31805 /* ZYPrettyCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZYPrettyCollectionViewCell.xib; sourceTree = "<group>"; };
 		88CE081B1DACF80400F31805 /* ZYNetworkTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZYNetworkTools.swift; sourceTree = "<group>"; };
+		88E276A51DC9B9D900DD38C7 /* UIImage-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage-Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -504,6 +506,7 @@
 				885AD6D71DAA33A400222BBF /* UIBarButtonItem-Extension.swift */,
 				885AD6DF1DAA415600222BBF /* UIColor-Extension.swift */,
 				88CAB50F1DADD42400217EF7 /* NSDate-Extension.swift */,
+				88E276A51DC9B9D900DD38C7 /* UIImage-Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -756,6 +759,7 @@
 				885AD6DC1DAA3A8E00222BBF /* ZYCommon.swift in Sources */,
 				885AD6D81DAA33A400222BBF /* UIBarButtonItem-Extension.swift in Sources */,
 				88069E841DC72C5900C390A3 /* ZYGameViewModel.swift in Sources */,
+				88E276A61DC9B9D900DD38C7 /* UIImage-Extension.swift in Sources */,
 				88CAB5181DADFE1C00217EF7 /* ZYCollectionBaseCell.swift in Sources */,
 				88CAB5121DADD9AF00217EF7 /* ZYAnchorModel.swift in Sources */,
 				888C121B1DC82733008188F8 /* ZYMenuViewCell.swift in Sources */,

@@ -18,7 +18,6 @@ enum returnDataType {
 
 class ZYNetworkTools{
     
-    
     /// 发送POST请求
     class func POST_Request(_ urlString : String, params : [String : String]? = nil, returnDataType: returnDataType, finishedCallback : @escaping (_ responseObject : Any)->()) {
         let messagename = params?["messagename"] ?? "无名氏"
