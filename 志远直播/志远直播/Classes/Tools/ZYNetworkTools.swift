@@ -25,10 +25,10 @@ class ZYNetworkTools{
         case .JSON:
             Alamofire.request(urlString, method: .post, parameters: params, encoding: URLEncoding.default).responseJSON { (response) in
                 //打印请求地址
-                ZYLogin(message: "请求\(messagename)：\(response.request!)")
+                debugPrint(message: "请求\(messagename)：\(response.request!)")
                 //获取结果
                 guard let result = response.result.value else {
-                    ZYLogin(message: "请求\(messagename)失败原因:\(response.result.error)")
+                    debugPrint(message: "请求\(messagename)失败原因:\(response.result.error)")
                     return
                 }
                 // 将结果回调出去
@@ -38,10 +38,10 @@ class ZYNetworkTools{
             Alamofire.request(urlString, method: .post, parameters: params, encoding: URLEncoding.default).responseData(completionHandler: { (responseXML) in
                 //打印请求地址
                 
-                ZYLogin(message: "请求\(messagename)：\(responseXML.request!)")
+                debugPrint(message: "请求\(messagename)：\(responseXML.request!)")
                 //获取结果
                 guard let resultXML = responseXML.result.value else {
-                    ZYLogin(message: "请求\(messagename)失败原因:\(responseXML.result.error)")
+                    debugPrint(message: "请求\(messagename)失败原因:\(responseXML.result.error)")
                     return
                 }
                 // 将结果回调出去
@@ -57,10 +57,10 @@ class ZYNetworkTools{
         case .JSON:
             Alamofire.request(urlString, method: .get, parameters: params, encoding: URLEncoding.default).responseJSON { (response) in
                 //打印请求地址
-                ZYLogin(message: "请求\(messagename)：\(response.request!)")
+                debugPrint(message: "请求\(messagename)：\(response.request!)")
                 //获取结果
                 guard let result = response.result.value else {
-                    ZYLogin(message: "请求\(messagename)失败原因:\(response.result.error)")
+                    debugPrint(message: "请求\(messagename)失败原因:\(response.result.error)")
                     return
                 }
                 // 将结果回调出去
@@ -69,10 +69,10 @@ class ZYNetworkTools{
         default:
             Alamofire.request(urlString, method: .get, parameters: params, encoding: URLEncoding.default).responseData(completionHandler: { (responseXML) in
                 //打印请求地址
-                ZYLogin(message: "请求\(messagename)：\(responseXML.request!)")
+                debugPrint(message: "请求\(messagename)：\(responseXML.request!)")
                 //获取结果
                 guard let resultXML = responseXML.result.value else {
-                    ZYLogin(message: "请求\(messagename)失败原因:\(responseXML.result.error)")
+                    debugPrint(message: "请求\(messagename)失败原因:\(responseXML.result.error)")
                     return
                 }
                 // 将结果回调出去

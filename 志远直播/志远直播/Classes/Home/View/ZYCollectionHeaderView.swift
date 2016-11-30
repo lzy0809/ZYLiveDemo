@@ -32,7 +32,7 @@ class ZYCollectionHeaderView: UICollectionReusableView {
     
     //MARK:- 点击"更多"按钮
     @IBAction func moreButtonClick(_ sender: AnyObject) {
-        ZYLogin(message: "点击了'更多'按钮")
+        debugPrint(message: "点击了'更多'按钮")
     }
 }
 

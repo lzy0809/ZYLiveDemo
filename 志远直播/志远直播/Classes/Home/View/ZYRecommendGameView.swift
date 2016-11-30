@@ -56,7 +56,7 @@ extension ZYRecommendGameView: UICollectionViewDataSource,UICollectionViewDelega
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        ZYLogin(message: "点击了第\(indexPath.item)个item")
+        debugPrint(message: "点击了第\(indexPath.item)个item")
     }
     
 }

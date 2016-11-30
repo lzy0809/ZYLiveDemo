@@ -73,16 +73,16 @@ extension ZYHomeViewController {
 //MARK:- 导航栏按钮点击事件
 extension ZYHomeViewController {
     @objc fileprivate func logoClick(){
-        ZYLogin(message: "点击了logo按钮")
+        debugPrint(message: "点击了logo按钮")
     }
     @objc fileprivate func historyClick(){
-        ZYLogin(message: "点击了历史记录按钮")
+        debugPrint(message: "点击了历史记录按钮")
     }
     @objc fileprivate func scanClick(){
-        ZYLogin(message: "点击了二维码按钮")
+        debugPrint(message: "点击了二维码按钮")
     }
     @objc fileprivate func searchClick(){
-        ZYLogin(message: "点击了搜索按钮")
+        debugPrint(message: "点击了搜索按钮")
     }
 }
 

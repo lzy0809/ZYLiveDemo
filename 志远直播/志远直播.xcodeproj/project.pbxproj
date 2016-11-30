@@ -36,6 +36,22 @@
 		8861A77A1DAF205500F030DB /* ZYRecommendGameView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8861A7791DAF205500F030DB /* ZYRecommendGameView.xib */; };
 		8861A77D1DAF23AB00F030DB /* ZYCollectionGameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8861A77B1DAF23AB00F030DB /* ZYCollectionGameCell.swift */; };
 		8861A77E1DAF23AB00F030DB /* ZYCollectionGameCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8861A77C1DAF23AB00F030DB /* ZYCollectionGameCell.xib */; };
+		886BF1F91DEE62FC006A4906 /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 886BF1F81DEE62FB006A4906 /* IJKMediaFramework.framework */; };
+		886BF1FB1DEE65AA006A4906 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 886BF1FA1DEE65AA006A4906 /* AudioToolbox.framework */; };
+		886BF1FD1DEE65B3006A4906 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 886BF1FC1DEE65B3006A4906 /* AVFoundation.framework */; };
+		886BF1FF1DEE65C4006A4906 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 886BF1FE1DEE65C4006A4906 /* CoreMedia.framework */; };
+		886BF2011DEE65CF006A4906 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 886BF2001DEE65CF006A4906 /* CoreVideo.framework */; };
+		886BF2031DEE65DD006A4906 /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 886BF2021DEE65DD006A4906 /* libbz2.tbd */; };
+		886BF2051DEE65E5006A4906 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 886BF2041DEE65E5006A4906 /* libz.tbd */; };
+		886BF2071DEE65F1006A4906 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 886BF2061DEE65F1006A4906 /* MediaPlayer.framework */; };
+		886BF2091DEE6601006A4906 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 886BF2081DEE6601006A4906 /* MobileCoreServices.framework */; };
+		886BF20B1DEE660B006A4906 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 886BF20A1DEE660B006A4906 /* OpenGLES.framework */; };
+		886BF20D1DEE6618006A4906 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 886BF20C1DEE6618006A4906 /* VideoToolbox.framework */; };
+		886BF2121DEE6C14006A4906 /* ZYLiveTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886BF2101DEE6C14006A4906 /* ZYLiveTableViewCell.swift */; };
+		886BF2131DEE6C14006A4906 /* ZYLiveTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 886BF2111DEE6C14006A4906 /* ZYLiveTableViewCell.xib */; };
+		886BF2151DEE6D43006A4906 /* ZYLiveItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886BF2141DEE6D43006A4906 /* ZYLiveItem.swift */; };
+		886BF2181DEE6F9E006A4906 /* ZYLiveViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886BF2171DEE6F9E006A4906 /* ZYLiveViewModel.swift */; };
+		886BF21F1DEE9B09006A4906 /* ZYLiveRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886BF21D1DEE9B08006A4906 /* ZYLiveRoomViewController.swift */; };
 		888C12161DC822FF008188F8 /* ZYMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888C12151DC822FF008188F8 /* ZYMenuView.swift */; };
 		888C12181DC823E3008188F8 /* ZYMenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 888C12171DC823E3008188F8 /* ZYMenuView.xib */; };
 		888C121B1DC82733008188F8 /* ZYMenuViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888C12191DC82733008188F8 /* ZYMenuViewCell.swift */; };
@@ -122,6 +138,22 @@
 		8861A7791DAF205500F030DB /* ZYRecommendGameView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZYRecommendGameView.xib; sourceTree = "<group>"; };
 		8861A77B1DAF23AB00F030DB /* ZYCollectionGameCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZYCollectionGameCell.swift; sourceTree = "<group>"; };
 		8861A77C1DAF23AB00F030DB /* ZYCollectionGameCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZYCollectionGameCell.xib; sourceTree = "<group>"; };
+		886BF1F81DEE62FB006A4906 /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJKMediaFramework.framework; sourceTree = "<group>"; };
+		886BF1FA1DEE65AA006A4906 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		886BF1FC1DEE65B3006A4906 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		886BF1FE1DEE65C4006A4906 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		886BF2001DEE65CF006A4906 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		886BF2021DEE65DD006A4906 /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
+		886BF2041DEE65E5006A4906 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		886BF2061DEE65F1006A4906 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		886BF2081DEE6601006A4906 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		886BF20A1DEE660B006A4906 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		886BF20C1DEE6618006A4906 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		886BF2101DEE6C14006A4906 /* ZYLiveTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZYLiveTableViewCell.swift; sourceTree = "<group>"; };
+		886BF2111DEE6C14006A4906 /* ZYLiveTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZYLiveTableViewCell.xib; sourceTree = "<group>"; };
+		886BF2141DEE6D43006A4906 /* ZYLiveItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZYLiveItem.swift; sourceTree = "<group>"; };
+		886BF2171DEE6F9E006A4906 /* ZYLiveViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZYLiveViewModel.swift; sourceTree = "<group>"; };
+		886BF21D1DEE9B08006A4906 /* ZYLiveRoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZYLiveRoomViewController.swift; sourceTree = "<group>"; };
 		888C12151DC822FF008188F8 /* ZYMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZYMenuView.swift; sourceTree = "<group>"; };
 		888C12171DC823E3008188F8 /* ZYMenuView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZYMenuView.xib; sourceTree = "<group>"; };
 		888C12191DC82733008188F8 /* ZYMenuViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZYMenuViewCell.swift; sourceTree = "<group>"; };
@@ -158,7 +190,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				886BF20D1DEE6618006A4906 /* VideoToolbox.framework in Frameworks */,
+				886BF20B1DEE660B006A4906 /* OpenGLES.framework in Frameworks */,
+				886BF2091DEE6601006A4906 /* MobileCoreServices.framework in Frameworks */,
+				886BF2071DEE65F1006A4906 /* MediaPlayer.framework in Frameworks */,
+				886BF2051DEE65E5006A4906 /* libz.tbd in Frameworks */,
+				886BF2031DEE65DD006A4906 /* libbz2.tbd in Frameworks */,
+				886BF2011DEE65CF006A4906 /* CoreVideo.framework in Frameworks */,
+				886BF1FF1DEE65C4006A4906 /* CoreMedia.framework in Frameworks */,
+				886BF1FD1DEE65B3006A4906 /* AVFoundation.framework in Frameworks */,
+				886BF1FB1DEE65AA006A4906 /* AudioToolbox.framework in Frameworks */,
 				006ADCFF35676723F8E2E536 /* Pods_____.framework in Frameworks */,
+				886BF1F91DEE62FC006A4906 /* IJKMediaFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,6 +225,16 @@
 		4841218EA2282909C68B2CA3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				886BF20C1DEE6618006A4906 /* VideoToolbox.framework */,
+				886BF20A1DEE660B006A4906 /* OpenGLES.framework */,
+				886BF2081DEE6601006A4906 /* MobileCoreServices.framework */,
+				886BF2061DEE65F1006A4906 /* MediaPlayer.framework */,
+				886BF2041DEE65E5006A4906 /* libz.tbd */,
+				886BF2021DEE65DD006A4906 /* libbz2.tbd */,
+				886BF2001DEE65CF006A4906 /* CoreVideo.framework */,
+				886BF1FE1DEE65C4006A4906 /* CoreMedia.framework */,
+				886BF1FC1DEE65B3006A4906 /* AVFoundation.framework */,
+				886BF1FA1DEE65AA006A4906 /* AudioToolbox.framework */,
 				45D2E5AE1C98F55C3191E0F9 /* Pods_____.framework */,
 			);
 			name = Frameworks;
@@ -207,6 +260,7 @@
 		88069E8C1DC73D0500C390A3 /* Room */ = {
 			isa = PBXGroup;
 			children = (
+				886BF2161DEE6F89006A4906 /* ViewModel */,
 				88069E8D1DC73D0500C390A3 /* Controller */,
 				88069E8E1DC73D0500C390A3 /* Model */,
 				88069E8F1DC73D0500C390A3 /* View */,
@@ -219,6 +273,7 @@
 			children = (
 				88069E941DC73D5D00C390A3 /* ZYRoomShowViewController.swift */,
 				88069E921DC73D4400C390A3 /* ZYRoomNormalViewController.swift */,
+				886BF21D1DEE9B08006A4906 /* ZYLiveRoomViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -226,6 +281,7 @@
 		88069E8E1DC73D0500C390A3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				886BF2141DEE6D43006A4906 /* ZYLiveItem.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -233,6 +289,8 @@
 		88069E8F1DC73D0500C390A3 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				886BF2101DEE6C14006A4906 /* ZYLiveTableViewCell.swift */,
+				886BF2111DEE6C14006A4906 /* ZYLiveTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -266,6 +324,7 @@
 				885AD6A11DAA2A1700222BBF /* Classes */,
 				885AD67A1DAA287600222BBF /* Assets.xcassets */,
 				885AD67F1DAA287600222BBF /* Info.plist */,
+				886BF1F81DEE62FB006A4906 /* IJKMediaFramework.framework */,
 			);
 			path = "志远直播";
 			sourceTree = "<group>";
@@ -511,6 +570,14 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		886BF2161DEE6F89006A4906 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				886BF2171DEE6F9E006A4906 /* ZYLiveViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		88CAB50C1DADCAA900217EF7 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -647,6 +714,7 @@
 				88CAB51C1DAE181600217EF7 /* ZYRecommendCycleView.xib in Resources */,
 				888C121C1DC82733008188F8 /* ZYMenuViewCell.xib in Resources */,
 				885AD6D41DAA2F9F00222BBF /* Profile.storyboard in Resources */,
+				886BF2131DEE6C14006A4906 /* ZYLiveTableViewCell.xib in Resources */,
 				885AD6D11DAA2F8E00222BBF /* Follow.storyboard in Resources */,
 				885AD6CC1DAA2F5400222BBF /* Home.storyboard in Resources */,
 				88CE08121DACD82900F31805 /* ZYCollectionNormalViewCell.xib in Resources */,
@@ -732,11 +800,14 @@
 			files = (
 				88CE08151DACDED100F31805 /* ZYCollectionHeaderView.swift in Sources */,
 				88CE081C1DACF80400F31805 /* ZYNetworkTools.swift in Sources */,
+				886BF2181DEE6F9E006A4906 /* ZYLiveViewModel.swift in Sources */,
 				888C12161DC822FF008188F8 /* ZYMenuView.swift in Sources */,
+				886BF21F1DEE9B09006A4906 /* ZYLiveRoomViewController.swift in Sources */,
 				88069E981DC74A8600C390A3 /* ZYBaseViewController.swift in Sources */,
 				88CAB51F1DAE210D00217EF7 /* ZYRecommendCycleCell.swift in Sources */,
 				885AD6E21DAA4C0600222BBF /* ZYPageContentView.swift in Sources */,
 				88CAB5141DADE47200217EF7 /* ZYAnchorGroup.swift in Sources */,
+				886BF2151DEE6D43006A4906 /* ZYLiveItem.swift in Sources */,
 				888C12201DC85974008188F8 /* ZYAmuseViewModel.swift in Sources */,
 				885AD6DA1DAA39CF00222BBF /* ZYPageTitleView.swift in Sources */,
 				885AD6D61DAA31C300222BBF /* ZYHomeViewController.swift in Sources */,
@@ -758,6 +829,7 @@
 				888C12241DC8682D008188F8 /* ZYFunnyViewController.swift in Sources */,
 				885AD6DC1DAA3A8E00222BBF /* ZYCommon.swift in Sources */,
 				885AD6D81DAA33A400222BBF /* UIBarButtonItem-Extension.swift in Sources */,
+				886BF2121DEE6C14006A4906 /* ZYLiveTableViewCell.swift in Sources */,
 				88069E841DC72C5900C390A3 /* ZYGameViewModel.swift in Sources */,
 				88E276A61DC9B9D900DD38C7 /* UIImage-Extension.swift in Sources */,
 				88CAB5181DADFE1C00217EF7 /* ZYCollectionBaseCell.swift in Sources */,
@@ -938,6 +1010,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = UUHH4G6PDA;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/志远直播",
+				);
 				INFOPLIST_FILE = "志远直播/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -955,6 +1031,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = UUHH4G6PDA;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/志远直播",
+				);
 				INFOPLIST_FILE = "志远直播/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

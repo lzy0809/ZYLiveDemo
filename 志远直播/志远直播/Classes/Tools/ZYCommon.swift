@@ -30,11 +30,13 @@ let kGameMenuRootUrl = "http://capi.douyucdn.cn/api/homeCate/getHotRoom"
 let kAmuseRootUrl = "http://capi.douyucdn.cn/api/v1/getHotRoom/2"
 /// 首页趣玩
 let kFunnyRootUrl = "http://capi.douyucdn.cn/api/homeCate/getHotRoom"
+/// 直播
+let kLiveRoomNormalUrl = "http://116.211.167.106/api/live/aggregation"
 
 
 
 //MARK:- 自定义打印
-func ZYLogin<T>(message:T,
+func debugPrint<T>(message:T,
               file:String = #file,
               method:String = #function,
               line:Int = #line){
