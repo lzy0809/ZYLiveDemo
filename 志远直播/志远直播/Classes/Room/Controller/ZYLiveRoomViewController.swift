@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import IJKMediaFramework
+//import IJKMediaFramework
 
 class ZYLiveRoomViewController: UIViewController {
 
@@ -42,7 +42,7 @@ class ZYLiveRoomViewController: UIViewController {
         view.addSubview(imageV)
         view.addSubview(backButton)
         createPlayer()
-        view.insertSubview(player.view, at: 1)
+//        view.insertSubview(player.view, at: 1)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -53,8 +53,8 @@ class ZYLiveRoomViewController: UIViewController {
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(true)
         ///界面消失，一定要记得停止播放
-        player.pause()
-        player.stop()
+//        player.pause()
+//        player.stop()
     }
     
     ///返回按钮
@@ -66,13 +66,13 @@ class ZYLiveRoomViewController: UIViewController {
         button.alpha = 0.01
         return button
     }()
-    
+    /*
     fileprivate lazy var player:IJKFFMoviePlayerController = {
     let playVc = IJKFFMoviePlayerController(contentURL: self.liveUrl, with: nil)
         playVc?.view.frame = self.view.bounds
         return playVc!
     }()
-    
+    */
     lazy var imageV: UIImageView = {
         let imgV = UIImageView(frame: CGRect(x: 0, y: 64, width: kScreenW, height: kScreenW-64))
         return imgV
@@ -98,9 +98,10 @@ class ZYLiveRoomViewController: UIViewController {
 
 extension ZYLiveRoomViewController{
     fileprivate func createPlayer(){
-        
+        /*
         player = IJKFFMoviePlayerController(contentURL: liveUrl, with: nil)
         player.view.frame = UIScreen.main.bounds
         player.prepareToPlay()
+         */
     }
 }

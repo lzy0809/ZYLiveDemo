@@ -36,7 +36,6 @@
 		8861A77A1DAF205500F030DB /* ZYRecommendGameView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8861A7791DAF205500F030DB /* ZYRecommendGameView.xib */; };
 		8861A77D1DAF23AB00F030DB /* ZYCollectionGameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8861A77B1DAF23AB00F030DB /* ZYCollectionGameCell.swift */; };
 		8861A77E1DAF23AB00F030DB /* ZYCollectionGameCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8861A77C1DAF23AB00F030DB /* ZYCollectionGameCell.xib */; };
-		886BF1F91DEE62FC006A4906 /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 886BF1F81DEE62FB006A4906 /* IJKMediaFramework.framework */; };
 		886BF1FB1DEE65AA006A4906 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 886BF1FA1DEE65AA006A4906 /* AudioToolbox.framework */; };
 		886BF1FD1DEE65B3006A4906 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 886BF1FC1DEE65B3006A4906 /* AVFoundation.framework */; };
 		886BF1FF1DEE65C4006A4906 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 886BF1FE1DEE65C4006A4906 /* CoreMedia.framework */; };
@@ -138,7 +137,6 @@
 		8861A7791DAF205500F030DB /* ZYRecommendGameView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZYRecommendGameView.xib; sourceTree = "<group>"; };
 		8861A77B1DAF23AB00F030DB /* ZYCollectionGameCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZYCollectionGameCell.swift; sourceTree = "<group>"; };
 		8861A77C1DAF23AB00F030DB /* ZYCollectionGameCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZYCollectionGameCell.xib; sourceTree = "<group>"; };
-		886BF1F81DEE62FB006A4906 /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJKMediaFramework.framework; sourceTree = "<group>"; };
 		886BF1FA1DEE65AA006A4906 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		886BF1FC1DEE65B3006A4906 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		886BF1FE1DEE65C4006A4906 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
@@ -201,7 +199,6 @@
 				886BF1FD1DEE65B3006A4906 /* AVFoundation.framework in Frameworks */,
 				886BF1FB1DEE65AA006A4906 /* AudioToolbox.framework in Frameworks */,
 				006ADCFF35676723F8E2E536 /* Pods_____.framework in Frameworks */,
-				886BF1F91DEE62FC006A4906 /* IJKMediaFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,7 +321,6 @@
 				885AD6A11DAA2A1700222BBF /* Classes */,
 				885AD67A1DAA287600222BBF /* Assets.xcassets */,
 				885AD67F1DAA287600222BBF /* Info.plist */,
-				886BF1F81DEE62FB006A4906 /* IJKMediaFramework.framework */,
 			);
 			path = "志远直播";
 			sourceTree = "<group>";
